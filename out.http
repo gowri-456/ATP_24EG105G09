@@ -1,0 +1,39 @@
+### create user
+POST  http://localhost:4000/pro-api/product
+Content-Type: application/json
+
+{
+    "pid":"p3",
+    "pname":"pods",
+    "price":20000,
+    "brand":"boat"
+}
+
+###get users
+GET http://localhost:4000/pro-api/product
+
+###get product by id
+GET http://localhost:4000/pro-api/product/p3
+
+###update product
+PUT http://localhost:4000/pro-api/product/69abe2d4581606ea96671bec
+Content-Type: application/json
+
+{
+    "pname":"pc",
+    "price":40000,
+    "brand":"mac"
+}
+
+###
+POST  http://localhost:4000/pro-api/product
+
+{
+    "pid":"p1",
+    "pname":"mobile",
+    "price":50000,
+    "brand":"lg"
+}
+
+###delete product
+DELETE http://localhost:4000/pro-api/product/69abe2d4581606ea96671bec
