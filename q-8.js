@@ -1,40 +1,70 @@
-/* 
-1. Insert new Emp at 2nd position
-2. Remove an emp with name "Kiran"
-3.Change the last mark 95 to 75 of emp  "Sneha"*/
-const employees = [
-  {
-    eno: 101,
-    name: "Ravi",
-    marks: [78, 82, 91],
-  },
-  {
-    eno: 102,
-    name: "Bhanu",
-    marks: [65, 70, 68],
-  },
-  {
-    eno: 103,
-    name: "Sneha",
-    marks: [88, 92, 95],
-  },
-  {
-    eno: 104,
-    name: "Kiran",
-    marks: [55, 60, 58],
-  },
-  {
-    eno: 105,
-    name: "Anitha",
-    marks: [90, 85, 87],
-  },
-];
-//to insert new emp at 2nd positon
-let del=employees.splice(1,0,{eno:1022,name:"Teja",marks:[92,90,98]})
-console.log(employees)
-//to delte kiran    
-delete employees[4]
-console.log(employees)
-//changing marks of sneha
-employees[2].marks[2]=75
-console.log(employees)
+/*Problem Statement: Library Book Management System
+-------------------------------------------------
+Objective : Create a Book class and use it to manage a collection of books in a library.
+
+Requirements:
+  Create a Book class with the following:
+
+  Properties:
+      title (string)
+      author (string)
+      pages (number)
+      isAvailable (boolean, default: true)
+
+
+  Methods:
+      borrow() - Marks the book as not available
+      returnBook() - Marks the book as available
+      getInfo() - Returns a string with book details (e.g., "The Hobbit by J.R.R. Tolkien (310 pages)")
+      isLongBook() - Returns true if pages > 300, false otherwise
+
+
+
+
+  1. Create at least 5 book objects using the class:
+      Example: "Harry Potter", "1984", "The Hobbit", etc.
+
+
+  2. Perform the following operations:
+
+      i. Display info of all books
+      ii. Borrow 2 books and show their availability status
+      iii. Return 1 book and show updated status
+      iv. Count how many books are "long books" (more than 300 pages)
+      v. List all available books */
+class Book{
+    title 
+    author
+    pages
+    isAvailable
+    constructor(title,author,pages,isAvailable)
+    {
+        this.title=title
+        this.author=author
+        this.pages=pages
+        this.isAvailable=isAvailable
+    }
+    borrow()
+    {
+        if(this.isAvailable)
+        {
+            console.log("book is aavilable")
+        }
+    }
+    getInfo()
+    {
+        console.log(`${this.title} by ${this.author} (${this.pages})`)
+    }
+    isLongBook()
+    {
+        if(this.pages>300)9
+        {
+            console.log("true")
+        }
+    }
+    
+}
+let b1=new Book("the hobbit","JJ thomson",375,true)
+b1.getInfo()
+b1.borrow()
+b1.isLongBook()

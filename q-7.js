@@ -1,15 +1,22 @@
-//7. Write a function that receives an array & search element as args and returns the index of that search element in the array. It should return "not found" when search element not found.
-function searchElement(arr,search)
-{
-    for(let i=0;i<arr.length;i++)   
+//ass-1
+console.log("exam submitted succesfully")
+setTimeout(()=>{
+    console.log("Evaluating answers")
+},2000)
+setTimeout(()=>{
+    console.log("Result: Pass")
+},4000)
+
+//ass-2
+console.log("OTP Sent Successfully")
+let seconds=10
+let intervelId=setInterval(() => {
+    console.log(`OTP can resend in${seconds}sec`)
+    seconds--;
+    
+    if(seconds===0)
     {
-        if(arr[i]===search)  
-        {
-            console.log("index of search element is "+i)
-            return i
-        }
+        console.log("Resend OTP")
+        clearInterval(intervelId)
     }
-    console.log("not found")
-    return -1
-}
-searchElement([90,78,65,98],65)
+}, 1000);

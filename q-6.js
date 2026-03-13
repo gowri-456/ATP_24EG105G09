@@ -1,11 +1,14 @@
-//6. Write a function that receives an array as arg and return their sum
-function sumOfArray(arr)
-{
-    let sum=0   
-    for (let i=0;i<arr.length;i++)  
-    {
-        sum=sum+arr[i]
-    }   
-    console.log("sum of array is "+sum)
-}
-sumOfArray([90,78,65,98])
+//ex-1
+let fruits=["apple","banana"]
+let moreFruits=[];
+let copy=[...fruits,...moreFruits]
+let add=[...copy,"orange"]
+console.log(copy)
+console.log(add)
+
+
+//ex-2
+let user = {name: "Ravi", city: "Hyderabad"};
+let updatedUser={...user,age: 25}
+console.log(user)
+console.log(updatedUser)  
