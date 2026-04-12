@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    border:2px solid black;
+    margin:100px 80px;
+}
+.main{
+    margin:auto;
+    width:100%;
+    padding: 70px;
+    background-color: rgb(196, 88, 88);
+}
+
+.down{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    background-color:rgb(219, 138, 138);
+    padding: 70px;
+}
+cards h1,p,button{
+   margin-bottom: 5px;
+
+}
+cards button{
+ color: rgb(179, 90, 90);
+    background-color: rgb(37, 78, 119);
+}
+main button{
+    color:rgb(87, 128, 218);
+    background-color:rgb(20, 69, 92);
+}
+cards{
+    padding:10px;
+}
+h2{
+    margin-bottom: 7px;
+}
+p{
+     margin-bottom: 7px;  
+}
