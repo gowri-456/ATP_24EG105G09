@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7fb3b5;
+}
+
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #cfe8e8;
+    padding: 15px;
+}
+
+
+h2 {
+    text-align: center;
+    background-color: #3d7f7f;
+    color: white;
+    padding: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+th {
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
